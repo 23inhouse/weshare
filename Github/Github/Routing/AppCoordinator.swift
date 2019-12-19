@@ -17,7 +17,7 @@ class AppCoordinator: Coordinator {
   }
 
   func start() {
-    let viewController = TopReposViewController()
+    let viewController = RepoDetailViewController()
     viewController.coordinator = self
     go(to: viewController)
   }

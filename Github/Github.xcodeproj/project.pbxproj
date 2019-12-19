@@ -21,6 +21,8 @@
 		B53E6D8C23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8B23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift */; };
 		B53E6D8E23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8D23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift */; };
 		B53E6D9023ABC52F00F70F7A /* TopRepoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */; };
+		B53E6D9323ABD04500F70F7A /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9223ABD04500F70F7A /* RepoDetailViewController.swift */; };
+		B53E6D9523ABD10700F70F7A /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9423ABD10700F70F7A /* RepoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		B53E6D8B23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopReposViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		B53E6D8D23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopReposViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRepoViewCell.swift; sourceTree = "<group>"; };
+		B53E6D9223ABD04500F70F7A /* RepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
+		B53E6D9423ABD10700F70F7A /* RepoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 		B53E6D8723ABC17400F70F7A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				B53E6D9123ABD01C00F70F7A /* RepoDetail */,
 				B53E6D8823ABC17A00F70F7A /* TopRepos */,
 			);
 			path = App;
@@ -192,6 +197,15 @@
 				B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */,
 			);
 			path = TopRepos;
+			sourceTree = "<group>";
+		};
+		B53E6D9123ABD01C00F70F7A /* RepoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B53E6D9223ABD04500F70F7A /* RepoDetailViewController.swift */,
+				B53E6D9423ABD10700F70F7A /* RepoDetailView.swift */,
+			);
+			path = RepoDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +341,10 @@
 				B53E6D9023ABC52F00F70F7A /* TopRepoViewCell.swift in Sources */,
 				B53E6D8423ABC00700F70F7A /* AppCoordinator.swift in Sources */,
 				B53E6D8A23ABC1EE00F70F7A /* TopReposViewController.swift in Sources */,
+				B53E6D9523ABD10700F70F7A /* RepoDetailView.swift in Sources */,
 				B53E6D4C23ABBA5100F70F7A /* AppDelegate.swift in Sources */,
 				B53E6D8223ABBFE600F70F7A /* UIView+Constraints.swift in Sources */,
+				B53E6D9323ABD04500F70F7A /* RepoDetailViewController.swift in Sources */,
 				B53E6D8E23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift in Sources */,
 				B53E6D8C23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift in Sources */,
 				B53E6D7F23ABBF8F00F70F7A /* AppViewController.swift in Sources */,
