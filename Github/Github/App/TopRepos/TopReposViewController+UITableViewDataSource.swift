@@ -14,15 +14,15 @@ extension TopReposViewController: UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let recentResult = topRepos[indexPath.row]
+    let repo = topRepos[indexPath.row]
 
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! TopRepoViewCell
-    cell.name.text = "Best swift repo"
-    cell.desc.text = "It does wow and I can't even, and even if i could I just couldn't. you know?!"
-    cell.language.text = "Swift"
-    cell.starCount.text = "⭐️ \(recentResult)"
-    cell.forkCount.text = "🍴 \(recentResult)"
-    cell.author.text = "by: SwiftBro"
+    cell.name.text = repo.name
+    cell.desc.text = repo.description
+    cell.language.text = repo.language ?? ""
+    cell.starCount.text = "⭐️ \(repo.stargazersCount)"
+    cell.forkCount.text = "🍴 \(repo.forksCount)"
+    cell.author.text = "by: \(repo.owner.login)"
     return cell
   }
 }

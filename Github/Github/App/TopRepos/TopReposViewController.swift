@@ -14,7 +14,7 @@ class TopReposViewController: UIViewController {
   let cellIdentifier = "TopReposViewCell"
 
   private(set) var topReposTV = UITableView()
-  private(set) var topRepos = [String]() {
+  private(set) var topRepos = [GitHubRawItem]() {
     didSet {
       topReposTV.reloadData()
     }
@@ -33,7 +33,9 @@ class TopReposViewController: UIViewController {
 
 private extension TopReposViewController {
   func loadData() {
-    topRepos = ["10000", "999", "123", "71", "23", "10", "1"]
+    API.fetchData { rawData in
+      self.topRepos = rawData.items
+    }
   }
 
   func setupView() {

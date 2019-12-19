@@ -13,7 +13,7 @@ class RepoDetailViewController: UIViewController {
 
   let repoDetailView = RepoDetailView()
 
-  private(set) var repo: String = ""
+  var repo: GitHubRawItem?
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,15 +27,21 @@ class RepoDetailViewController: UIViewController {
 }
 
 private extension RepoDetailViewController {
+  func language(for repo: GitHubRawItem) -> String {
+    guard let lang = repo.language else {
+      return ""
+    }
+    return "Language: \(lang)"
+  }
   func loadData() {
-    repo = "71"
+    guard let repo = repo else { return }
 
-    repoDetailView.name.text = "Best swift repo"
-    repoDetailView.desc.text = "It does wow and I can't even, and even if i could I just couldn't. you know?!"
-    repoDetailView.language.text = "Language: Swift"
-    repoDetailView.starCount.text = "⭐️ \(repo)"
-    repoDetailView.forkCount.text = "🍴 \(repo)"
-    repoDetailView.author.text = "Author: SwiftBro"
+    repoDetailView.name.text = repo.name
+    repoDetailView.desc.text = repo.description
+    repoDetailView.language.text = language(for: repo)
+    repoDetailView.starCount.text = "⭐️ \(repo.stargazersCount)"
+    repoDetailView.forkCount.text = "🍴 \(repo.forksCount)"
+    repoDetailView.author.text = "Author: \(repo.owner.login)"
 
   }
 

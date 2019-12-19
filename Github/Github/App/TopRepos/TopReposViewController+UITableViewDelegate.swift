@@ -16,7 +16,9 @@ extension TopReposViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
 
+    let repo = topRepos[indexPath.row]
     let repoDetailVC = RepoDetailViewController()
+    repoDetailVC.repo = repo
     navigationController?.pushViewController(repoDetailVC, animated: true)
 
   }
