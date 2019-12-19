@@ -37,6 +37,7 @@ private extension TopReposViewController {
   }
 
   func setupView() {
+    title = "Trending Repos"
     view.addSubview(topReposTV)
     topReposTV.constrain(to: view)
 

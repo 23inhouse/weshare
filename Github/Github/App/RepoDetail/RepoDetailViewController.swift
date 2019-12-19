@@ -41,6 +41,7 @@ private extension RepoDetailViewController {
 
   func setupView() {
     view.addSubview(repoDetailView)
-    repoDetailView.constrain(to: view, margin: 10)
+    guard let view = view else { return }
+    repoDetailView.constrain(to: view.safeAreaLayoutGuide, margin: 0)
   }
 }

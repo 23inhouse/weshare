@@ -23,6 +23,7 @@
 		B53E6D9023ABC52F00F70F7A /* TopRepoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */; };
 		B53E6D9323ABD04500F70F7A /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9223ABD04500F70F7A /* RepoDetailViewController.swift */; };
 		B53E6D9523ABD10700F70F7A /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9423ABD10700F70F7A /* RepoDetailView.swift */; };
+		B53E6D9723ABD6EB00F70F7A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9623ABD6EA00F70F7A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRepoViewCell.swift; sourceTree = "<group>"; };
 		B53E6D9223ABD04500F70F7A /* RepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
 		B53E6D9423ABD10700F70F7A /* RepoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailView.swift; sourceTree = "<group>"; };
+		B53E6D9623ABD6EA00F70F7A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		B53E6D8723ABC17400F70F7A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				B53E6D9623ABD6EA00F70F7A /* MainViewController.swift */,
 				B53E6D9123ABD01C00F70F7A /* RepoDetail */,
 				B53E6D8823ABC17A00F70F7A /* TopRepos */,
 			);
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53E6D9023ABC52F00F70F7A /* TopRepoViewCell.swift in Sources */,
+				B53E6D9723ABD6EB00F70F7A /* MainViewController.swift in Sources */,
 				B53E6D8423ABC00700F70F7A /* AppCoordinator.swift in Sources */,
 				B53E6D8A23ABC1EE00F70F7A /* TopReposViewController.swift in Sources */,
 				B53E6D9523ABD10700F70F7A /* RepoDetailView.swift in Sources */,

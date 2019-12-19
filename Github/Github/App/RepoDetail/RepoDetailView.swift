@@ -77,6 +77,7 @@ private extension RepoDetailView {
   }
 
   func setupView() {
+    backgroundColor = .white
     addSubview(mainStack)
     mainStack.addArrangedSubview(name)
     mainStack.addArrangedSubview(language)
