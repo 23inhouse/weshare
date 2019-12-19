@@ -97,12 +97,9 @@
 		B53E6D4A23ABBA5100F70F7A /* Github */ = {
 			isa = PBXGroup;
 			children = (
-				B53E6D4B23ABBA5100F70F7A /* AppDelegate.swift */,
 				B53E6D4D23ABBA5100F70F7A /* ViewController.swift */,
-				B53E6D4F23ABBA5100F70F7A /* Main.storyboard */,
-				B53E6D5223ABBA5200F70F7A /* Assets.xcassets */,
-				B53E6D5423ABBA5200F70F7A /* LaunchScreen.storyboard */,
 				B53E6D5723ABBA5200F70F7A /* Info.plist */,
+				B53E6D7923ABBE4E00F70F7A /* Supporting Files */,
 			);
 			path = Github;
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				B53E6D6D23ABBA5300F70F7A /* Info.plist */,
 			);
 			path = GithubUITests;
+			sourceTree = "<group>";
+		};
+		B53E6D7923ABBE4E00F70F7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B53E6D4B23ABBA5100F70F7A /* AppDelegate.swift */,
+				B53E6D5223ABBA5200F70F7A /* Assets.xcassets */,
+				B53E6D5423ABBA5200F70F7A /* LaunchScreen.storyboard */,
+				B53E6D4F23ABBA5100F70F7A /* Main.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
