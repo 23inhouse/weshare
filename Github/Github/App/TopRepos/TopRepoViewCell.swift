@@ -36,27 +36,29 @@ class TopRepoViewCell: UITableViewCell {
 
   var language: UILabel = {
     let language = UILabel()
-    language.font = UIFont.preferredFont(forTextStyle: .body)
+    language.font = UIFont.preferredFont(forTextStyle: .caption1)
     return language
   }()
 
   var starCount: UILabel = {
     let starcount = UILabel()
-    starcount.font = UIFont.preferredFont(forTextStyle: .body)
+    starcount.font = UIFont.preferredFont(forTextStyle: .caption1)
     return starcount
   }()
 
   var forkCount: UILabel = {
     let forkCount = UILabel()
-    forkCount.font = UIFont.preferredFont(forTextStyle: .body)
+    forkCount.font = UIFont.preferredFont(forTextStyle: .caption1)
     return forkCount
   }()
 
   var author: UILabel = {
     let author = UILabel()
-    author.font = UIFont.preferredFont(forTextStyle: .body)
+    author.font = UIFont.preferredFont(forTextStyle: .subheadline)
     return author
   }()
+
+  let spacer = UIView()
 
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -78,12 +80,13 @@ private extension TopRepoViewCell {
   func setupView() {
     addSubview(mainStack)
     mainStack.addArrangedSubview(name)
+    mainStack.addArrangedSubview(author)
     mainStack.addArrangedSubview(desc)
+    mainStack.addArrangedSubview(spacer)
     mainStack.addArrangedSubview(detailStack)
 
     detailStack.addArrangedSubview(language)
-    detailStack.addArrangedSubview(starCount)
     detailStack.addArrangedSubview(forkCount)
-    detailStack.addArrangedSubview(author)
+    detailStack.addArrangedSubview(starCount)
   }
 }

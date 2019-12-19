@@ -12,6 +12,7 @@ class RepoDetailView: UIView {
   let mainStack: UIStackView = {
     let mainStack = UIStackView()
     mainStack.axis = .vertical
+    mainStack.spacing = 5
     return mainStack
   }()
 
@@ -30,8 +31,7 @@ class RepoDetailView: UIView {
 
   var desc: UITextView = {
     let desc = UITextView()
-    desc.font = UIFont.preferredFont(forTextStyle: .subheadline)
-    desc.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
+    desc.font = UIFont.preferredFont(forTextStyle: .body)
     return desc
   }()
 
@@ -43,13 +43,13 @@ class RepoDetailView: UIView {
 
   var starCount: UILabel = {
     let starcount = UILabel()
-    starcount.font = UIFont.preferredFont(forTextStyle: .body)
+    starcount.font = UIFont.preferredFont(forTextStyle: .subheadline)
     return starcount
   }()
 
   var forkCount: UILabel = {
     let forkCount = UILabel()
-    forkCount.font = UIFont.preferredFont(forTextStyle: .body)
+    forkCount.font = UIFont.preferredFont(forTextStyle: .subheadline)
     return forkCount
   }()
 
