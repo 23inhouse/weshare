@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B53E6D4C23ABBA5100F70F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D4B23ABBA5100F70F7A /* AppDelegate.swift */; };
-		B53E6D4E23ABBA5100F70F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D4D23ABBA5100F70F7A /* ViewController.swift */; };
 		B53E6D5323ABBA5200F70F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53E6D5223ABBA5200F70F7A /* Assets.xcassets */; };
 		B53E6D5623ABBA5200F70F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53E6D5423ABBA5200F70F7A /* LaunchScreen.storyboard */; };
 		B53E6D6123ABBA5300F70F7A /* GithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D6023ABBA5300F70F7A /* GithubTests.swift */; };
@@ -18,6 +17,10 @@
 		B53E6D8223ABBFE600F70F7A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8123ABBFE600F70F7A /* UIView+Constraints.swift */; };
 		B53E6D8423ABC00700F70F7A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8323ABC00700F70F7A /* AppCoordinator.swift */; };
 		B53E6D8623ABC06200F70F7A /* UIViewController+Subcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8523ABC06200F70F7A /* UIViewController+Subcontroller.swift */; };
+		B53E6D8A23ABC1EE00F70F7A /* TopReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8923ABC1EE00F70F7A /* TopReposViewController.swift */; };
+		B53E6D8C23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8B23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift */; };
+		B53E6D8E23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8D23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift */; };
+		B53E6D9023ABC52F00F70F7A /* TopRepoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 /* Begin PBXFileReference section */
 		B53E6D4823ABBA5100F70F7A /* Github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Github.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53E6D4B23ABBA5100F70F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B53E6D4D23ABBA5100F70F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B53E6D5223ABBA5200F70F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53E6D5523ABBA5200F70F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53E6D5723ABBA5200F70F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,10 @@
 		B53E6D8123ABBFE600F70F7A /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B53E6D8323ABC00700F70F7A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B53E6D8523ABC06200F70F7A /* UIViewController+Subcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Subcontroller.swift"; sourceTree = "<group>"; };
+		B53E6D8923ABC1EE00F70F7A /* TopReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopReposViewController.swift; sourceTree = "<group>"; };
+		B53E6D8B23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopReposViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		B53E6D8D23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopReposViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRepoViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,7 @@
 		B53E6D4A23ABBA5100F70F7A /* Github */ = {
 			isa = PBXGroup;
 			children = (
-				B53E6D4D23ABBA5100F70F7A /* ViewController.swift */,
+				B53E6D8723ABC17400F70F7A /* App */,
 				B53E6D8023ABBFBC00F70F7A /* Extensions */,
 				B53E6D7B23ABBF3E00F70F7A /* Protocols */,
 				B53E6D7A23ABBF1700F70F7A /* Routing */,
@@ -167,6 +173,25 @@
 				B53E6D8523ABC06200F70F7A /* UIViewController+Subcontroller.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B53E6D8723ABC17400F70F7A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B53E6D8823ABC17A00F70F7A /* TopRepos */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B53E6D8823ABC17A00F70F7A /* TopRepos */ = {
+			isa = PBXGroup;
+			children = (
+				B53E6D8923ABC1EE00F70F7A /* TopReposViewController.swift */,
+				B53E6D8D23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift */,
+				B53E6D8B23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift */,
+				B53E6D8F23ABC52F00F70F7A /* TopRepoViewCell.swift */,
+			);
+			path = TopRepos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,10 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53E6D9023ABC52F00F70F7A /* TopRepoViewCell.swift in Sources */,
 				B53E6D8423ABC00700F70F7A /* AppCoordinator.swift in Sources */,
-				B53E6D4E23ABBA5100F70F7A /* ViewController.swift in Sources */,
+				B53E6D8A23ABC1EE00F70F7A /* TopReposViewController.swift in Sources */,
 				B53E6D4C23ABBA5100F70F7A /* AppDelegate.swift in Sources */,
 				B53E6D8223ABBFE600F70F7A /* UIView+Constraints.swift in Sources */,
+				B53E6D8E23ABC4A000F70F7A /* TopReposViewController+UITableViewDataSource.swift in Sources */,
+				B53E6D8C23ABC3E100F70F7A /* TopReposViewController+UITableViewDelegate.swift in Sources */,
 				B53E6D7F23ABBF8F00F70F7A /* AppViewController.swift in Sources */,
 				B53E6D8623ABC06200F70F7A /* UIViewController+Subcontroller.swift in Sources */,
 				B53E6D7D23ABBF6F00F70F7A /* Coordinator.swift in Sources */,
