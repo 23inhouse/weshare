@@ -20,7 +20,6 @@ extension TopReposViewController: UITableViewDelegate {
     let repoDetailVC = RepoDetailViewController()
     repoDetailVC.repo = repo
     navigationController?.pushViewController(repoDetailVC, animated: true)
-
   }
 
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

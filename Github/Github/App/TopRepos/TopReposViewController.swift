@@ -13,6 +13,8 @@ class TopReposViewController: UIViewController {
 
   let cellIdentifier = "TopReposViewCell"
 
+  private let urlPath = "https://api.github.com/search/repositories?q=stars:%3e=1"
+
   private(set) var topReposTV = UITableView()
   private(set) var topRepos = [GitHubRawItem]() {
     didSet {
@@ -33,8 +35,8 @@ class TopReposViewController: UIViewController {
 
 private extension TopReposViewController {
   func loadData() {
-    API.fetchData { rawData in
-      self.topRepos = rawData.items
+    API.fetchItems(from: urlPath) { [weak self] items in
+      self?.topRepos = items
     }
   }
 

@@ -26,7 +26,6 @@
 		B53E6D9723ABD6EB00F70F7A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9623ABD6EA00F70F7A /* MainViewController.swift */; };
 		B53E6D9D23ABE58900F70F7A /* GitHubRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9C23ABE58900F70F7A /* GitHubRawData.swift */; };
 		B53E6D9F23ABE7A200F70F7A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6D9E23ABE7A200F70F7A /* Api.swift */; };
-		B53E6DA523ABEA6B00F70F7A /* TopRepos.json in Resources */ = {isa = PBXBuildFile; fileRef = B53E6DA423ABEA6B00F70F7A /* TopRepos.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +71,6 @@
 		B53E6D9623ABD6EA00F70F7A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B53E6D9C23ABE58900F70F7A /* GitHubRawData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRawData.swift; sourceTree = "<group>"; };
 		B53E6D9E23ABE7A200F70F7A /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		B53E6DA423ABEA6B00F70F7A /* TopRepos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopRepos.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,18 +216,9 @@
 			path = RepoDetail;
 			sourceTree = "<group>";
 		};
-		B53E6D9A23ABE30E00F70F7A /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				B53E6DA423ABEA6B00F70F7A /* TopRepos.json */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		B53E6D9B23ABE52800F70F7A /* API */ = {
 			isa = PBXGroup;
 			children = (
-				B53E6D9A23ABE30E00F70F7A /* Data */,
 				B53E6D9C23ABE58900F70F7A /* GitHubRawData.swift */,
 				B53E6D9E23ABE7A200F70F7A /* Api.swift */,
 			);
@@ -341,7 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53E6D5623ABBA5200F70F7A /* LaunchScreen.storyboard in Resources */,
-				B53E6DA523ABEA6B00F70F7A /* TopRepos.json in Resources */,
 				B53E6D5323ABBA5200F70F7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
